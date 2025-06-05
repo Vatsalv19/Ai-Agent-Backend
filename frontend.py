@@ -29,7 +29,7 @@ user_query = st.text_area(
     placeholder="Type your question or request here..."
 )
 
-API_URL = "http://localhost:8000/chat"
+API_URL = "https://ai-agent-backend-knjw.onrender.com/chat"
 
 if st.button("Ask Agent"):
     if user_query.strip():
@@ -88,7 +88,7 @@ st.sidebar.markdown("""
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Backend Status:**")
 try:
-    health_response = requests.get("http://localhost:8000/", timeout=5)
+    health_response = requests.get("https://ai-agent-backend-knjw.onrender.com/", timeout=5)
     if health_response.status_code == 200:
         st.sidebar.success("✅ Backend is running")
     else:
