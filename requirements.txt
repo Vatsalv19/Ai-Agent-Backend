@@ -1,10 +1,13 @@
 fastapi
 uvicorn
+mangum
 pydantic
 python-dotenv
-streamlit
 langchain
+langchain-core
 langchain-openai
-langchain-community
 langchain-groq
+langchain-community
+streamlit
+requests
 langgraph
